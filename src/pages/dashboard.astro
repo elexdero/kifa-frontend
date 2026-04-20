@@ -214,7 +214,7 @@
         dom.thead.innerHTML = ''; dom.tbody.innerHTML = '';
 
         try {
-            const res = await fetch(`http://3.21.164.176:4000/api/tables/${tableName}`, {
+            const res = await fetch(`http://3.23.63.114:4000/api/tables/${tableName}`, {
                 headers: { 'Authorization': `Bearer ${token}` }
             });
             const data = await res.json();
@@ -260,7 +260,7 @@
     // 1. Cargar las tablas iniciales
     async function loadDashboard() {
         try {
-            const res = await fetch('http://3.21.164.176:4000/api/tables', {
+            const res = await fetch('http://3.23.63.114:4000/api/tables', {
                 headers: { 'Authorization': `Bearer ${token}` }
             });
             const data = await res.json();

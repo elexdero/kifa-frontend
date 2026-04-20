@@ -113,7 +113,7 @@
         const password = document.getElementById('password').value;
         try {
             // ¡EL PUENTE CON TU BACKEND!
-            const res = await fetch('http://3.21.164.176:4000/api/login', {
+            const res = await fetch('http://3.23.63.114:4000/api/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ user, password })
